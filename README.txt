@@ -1,1 +1,0 @@
-This website contains personal information of Dhruv Rai which has been used with his permission. Publishing and/or any public display of this information is not allowed and will be considered an infringement of the privacy of Dhruv Rai. Furthermore the website itself is open for all, but it should not be cloned and published as own.
