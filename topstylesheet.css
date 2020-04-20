@@ -1,0 +1,221 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin:0;
+}
+/*top bar*/
+.topnav {
+    position: fixed;
+    overflow: hidden;
+    background-color: rgb(7, 1, 51);
+    width:99vw;
+    border-radius:1vw;
+    z-index: 100;
+}
+.topnav a {
+    float: left;
+    display: block;
+    font-size:2vw;
+    font-family:'Cinzel Decorative';
+    color: #f2f2f2;
+    text-align: center;
+    padding: 22px 1vw;
+    text-decoration: none;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.navlinks {
+    float:right;
+}
+.navhead {
+    padding:18px 16px;
+    font-size:3vw;
+    color:#f79e9e;
+    font-family:'Cinzel Decorative';
+}
+/*first page*/
+.content {
+    background-position: center;
+    background-size: cover;
+    height:800px;
+}
+.image1 {
+    width:20vw;
+    position:relative;
+    top:10vh;
+    left:20vw;
+    float:left;  
+    animation-name: appear;
+    animation-duration: 2s;              
+}
+.emptydiv {
+    height:1vh;
+}
+.written_content {
+    float:left;
+    color:whitesmoke;
+    top:20vh;
+    font-size: 30px ;
+    letter-spacing: 0.1vw;
+    font-family: 'Sofia';
+    text-align: center;
+    position:relative;
+}
+/*contact page*/
+.flex-container-row {
+    display: flex;
+    flex-direction: row;
+}
+.contact-icon {
+    position:relative;
+    top:20vh;
+}
+.contact_info {
+    font-size:40px;
+    font-family:'Cinzel';
+    text-align: center;
+    position: relative;
+    top:15vh;
+    text-shadow: 2px 2px 4px #656363;
+    animation-name:moveInleft;
+    animation-duration:1s;
+}
+.icon {
+    font-size: 5vw;
+    float:left;
+    margin:10px;
+}
+.icon-1 a {
+    color:#2ba7f3;
+}
+.icon-2 a {
+    color:black
+}
+.icon-3 a {
+    color:#d03086;
+}
+.icon-4 a {
+    color:#425f9c;
+}
+/*interests page*/
+.flex-container-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    position:relative;
+    top:30vh;
+}
+.card {
+    background-color:rgba(255, 255, 255, 0.217);
+    text-align: center;
+    margin:10px;
+    padding-top: 20px;
+    height:200px;
+    width:475px;
+    border-radius:20px;
+}
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.809);
+    box-shadow: 10px 10px 5px grey;
+}
+.card i {
+    font-size:100px;
+}
+.card-1 i {
+    color:#023a90;
+}
+.card-5 i {
+    color:#0a1b49;
+}
+/*academic page*/
+.page_header {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Cinzel';
+    position:relative;
+    top:20vh;
+    text-shadow: 2px 2px 4px #656363;
+    animation-name:moveInright;
+    animation-duration: 1s;
+}
+.sch {
+    background-color:rgba(255, 255, 255, 0.224);
+    margin: 20px;
+    text-align:center;
+    width:100%;
+    height:250px;
+    border-radius:20px;
+}
+.level {
+    font-size:30px;
+    font-family: 'Sofia';
+}
+.school_name {
+    font-size: 20px;
+    font-family: 'Euphoria Script';
+    font-weight: 600;
+}
+.sch i {
+    font-size: 100px;
+}
+.sch:hover {
+    color:white;
+    background-color: rgba(0, 0, 0, 0.557);
+}
+
+/*achievements*/
+.ach {
+    text-align: center;
+    height:400px;
+    width:50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.ach i {
+    color:rgb(167, 127, 18);
+}
+.ach-3 {
+    background-color: violet;
+    width:100%;
+    text-align: center;
+
+}
+/*animations*/
+@keyframes moveInright {
+    0% {
+        opacity:0;
+        transform:translateX(100px);
+    }
+    80% {
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+@keyframes moveInleft {
+    0% {
+        opacity:0;
+        transform:translateX(-100px);
+    }
+    80% {
+        transform:translateX(20px);
+    }
+    100% {
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+@keyframes appear {
+    0% {
+        opacity:0;
+        width:0;
+        height:0;
+    }
+    100% {
+        opacity:1;
+        width:20vw;
+    }
+}
